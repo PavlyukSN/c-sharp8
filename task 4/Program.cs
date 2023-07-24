@@ -8,10 +8,12 @@
 */
 
 int[,,] Array = new int[2,2,2];
+int x = 10;
     for (int i = 0; i < Array.GetLength(0); i++){
         for (int j = 0; j < Array.GetLength(1); j++) {
             for (int k = 0; k < Array.GetLength(2); k++) {
-            Array[i,j,k] = new Random().Next(10,100);
+            Array[i,j,k] = x;
+                x++;
             Console.Write($"{Array[i,j,k]}({i},{j},{k})");
             Console.Write(" ");
             }
